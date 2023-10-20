@@ -49,6 +49,15 @@ main {
 	background-image: linear-gradient(var(--clr-blue), #181E27);
 }
 
+.star{
+	height: 2.8rem;
+	width: 2.8rem;
+	border-radius: 50%;
+	background-color: #2e343f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* ----------RADIO------------ */
@@ -60,8 +69,8 @@ main {
 
 .radio-button__wrapper,
 .radio-button {
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 2.8rem;
+	width: 2.8rem;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
