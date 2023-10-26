@@ -24,7 +24,6 @@ p {
 	line-height: 1.2rem;
 }
 
-
 body {
 	height: 100vh;
 	width: 100vw;
@@ -35,7 +34,7 @@ body {
 	color: var(--clr-grey);
 }
 
-.main {
+main {
 	max-width: 23rem;
 	height: 23rem;
 	border-radius: 1rem;
@@ -47,17 +46,17 @@ body {
 	background-image: radial-gradient(circle at top, var(--clr-blue), #181E28);
 }
 
+.--hidden {
+	display: none;
+}
+
 .thank-you {
 	text-align: center;
 	align-items: center;
 	justify-content: space-around;
 }
 
-.--hidden {
-	display: none;
-}
-
-#result{
+#result {
 	background-color: #2e343f;
 	color: var(--clr-primary);
 	padding: .4rem .7rem;
@@ -75,39 +74,36 @@ body {
 }
 
 
-/* ----------RADIO------------ */
 
-.radio-wrapper {
+
+
+/* ----------RADIO------------ */
+ .radio {
 	display: flex;
 	justify-content: space-between;
 }
 
-.radio-button__wrapper,
-.radio--style {
+.radio__button, .radio--style{
 	height: 2.8rem;
 	width: 2.8rem;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.radio-button__wrapper {
+	background-color: #272E38;
 	position: relative;
 }
 
-.radio--style,
 #radio-input {
 	position: absolute;
-	background-color: #272E38;
 	transition: all .15s linear;
-}
-
-#radio-input {
-	width: 100%;
-	height: 100%;
 	opacity: 0;
 	z-index: 10;
+}
+
+#radio-input, .radio--style{
+	height: 100%;
+	width: 100%;
 }
 
 #radio-input:checked~.radio--style {
@@ -129,6 +125,7 @@ body {
 .submit-button {
 	height: 2.5rem;
 	border-radius: 2rem;
+	letter-spacing: .2rem;
 	border: 0;
 	background-color: var(--clr-primary);
 	color: var(--clr-white);
@@ -139,3 +136,24 @@ body {
 	background-color: var(--clr-white);
 	color: var(--clr-primary);
 }
+
+
+/* ----------MAIN ERROR------------ */
+
+/* @keyframes error {
+	0% {
+		transform: translate(0);
+	}
+
+	30% {
+		transform: translate(1rem);
+	}
+
+	60% {
+		transform: translate(-1rem);
+	}
+
+	100% {
+		transform: translate(0); 
+	}
+} */

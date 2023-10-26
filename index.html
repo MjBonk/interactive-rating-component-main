@@ -15,7 +15,7 @@
 
 
 <body>
-  <main class="main main--hide">
+  <main class="main--hide">
     <div class="icon">
       <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -28,34 +28,34 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <form class="radio-wrapper">
-      <div class="radio-button__wrapper">
+    <form class="radio">
+      <div class="radio__button">
         <input type="radio" name="radio" id="radio-input" value="1">
-        <span class="radio--style">1</span>
+        <label for="1" class="radio--style">1</label>
       </div>
-      <div class="radio-button__wrapper">
+      <div class="radio__button">
         <input type="radio" name="radio" id="radio-input" value="2">
-        <span class="radio--style">2</span>
+        <label for="2" class="radio--style">2</label>
       </div>
-      <div class="radio-button__wrapper">
+      <div class="radio__button">
         <input type="radio" name="radio" id="radio-input" value="3">
-        <span class="radio--style">3</span>
+        <label for="3" class="radio--style">3</label>
       </div>
-      <div class="radio-button__wrapper">
+      <div class="radio__button">
         <input type="radio" name="radio" id="radio-input" value="4">
-        <span class="radio--style">4</span>
+        <label for="4" class="radio--style">4</label>
       </div>
-      <div class="radio-button__wrapper">
+      <div class="radio__button">
         <input type="radio" name="radio" id="radio-input" value="5">
-        <span class="radio--style">5</span>
+        <label for="5" class="radio--style">5</label>
       </div>
     </form>
 
-    <button class="submit-button" onclick="submit()">HASSAN</button>
+    <button class="submit-button" onclick="submit()">SUBMIT</button>
   </main>
 
 
-  <main class="main thank-you --hidden">
+  <main class="thank-you --hidden">
     <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
       <g fill="none">
         <path
@@ -92,16 +92,16 @@
           fill="#FFF" />
       </g>
     </svg>
+
     <span id="result"></span>
 
     <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!</p>
   </main>
-
-  <script src="index.js"></script>
 </body>
 
+<script src="index.js"></script>
 </html>
 
 
