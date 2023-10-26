@@ -74,7 +74,6 @@ main {
 }
 
 
-/* hola. meaomo mata :)  */
 
 
 /* ----------RADIO------------ */
@@ -139,8 +138,12 @@ main {
 
 
 /* ----------MAIN ERROR------------ */
+#main--error{
+	animation: error .3s linear;
+	animation-play-state: paused;
+}
 
-/* @keyframes error {
+@keyframes error {
 	0% {
 		transform: translate(0);
 	}
@@ -156,4 +159,5 @@ main {
 	100% {
 		transform: translate(0); 
 	}
-} */
+}
+
