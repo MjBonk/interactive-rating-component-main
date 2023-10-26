@@ -77,12 +77,13 @@ main {
 
 
 /* ----------RADIO------------ */
- .radio {
+.radio {
 	display: flex;
 	justify-content: space-between;
 }
 
-.radio__button, .radio--style{
+.radio__button,
+#radio--style {
 	height: 2.8rem;
 	width: 2.8rem;
 	border-radius: 50%;
@@ -95,22 +96,25 @@ main {
 
 #radio-input {
 	position: absolute;
-	transition: all .15s linear;
 	opacity: 0;
 	z-index: 10;
+/* 	animation: radioError .3s linear;
+	animation-play-state: paused; */
 }
 
-#radio-input, .radio--style{
+#radio-input,
+#radio--style {
 	height: 100%;
 	width: 100%;
+	transition: all .15s linear;
 }
 
-#radio-input:checked~.radio--style {
+#radio-input:checked~#radio--style {
 	background-color: var(--clr-grey);
 	color: var(--clr-white);
 }
 
-#radio-input:hover~.radio--style {
+#radio-input:hover~#radio--style {
 	background-color: var(--clr-primary);
 	color: var(--clr-white);
 }
@@ -137,12 +141,11 @@ main {
 }
 
 
-/* ----------MAIN ERROR------------ */
-#main--error{
+/* ----------ERROR------------ */
+#main--error {
 	animation: error .3s linear;
 	animation-play-state: paused;
 }
-
 @keyframes error {
 	0% {
 		transform: translate(0);
@@ -151,13 +154,23 @@ main {
 	30% {
 		transform: translate(1rem);
 	}
-
+	
 	60% {
 		transform: translate(-1rem);
 	}
 
 	100% {
-		transform: translate(0); 
+		transform: translate(0);
 	}
 }
-
+/* @keyframes radioError {
+	0%{
+		border: 0;
+	}
+	33%, 66%{
+		border: 1px red solid; 
+	}
+	100%{
+		border: 0;
+	}
+} */
