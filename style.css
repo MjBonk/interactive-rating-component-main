@@ -83,39 +83,35 @@ main {
 }
 
 .radio__button,
-#radio--style {
-	height: 2.8rem;
-	width: 2.8rem;
-	border-radius: 50%;
+.radio--style {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 2.8rem;
+	width: 2.8rem;
+	border-radius: 50%;
 	background-color: #272E38;
 	position: relative;
+	transition: all .15s linear;
 }
 
-#radio-input {
+.radio-input {
 	position: absolute;
 	opacity: 0;
 	z-index: 10;
+	height: 100%;
+	width: 100%;
 /* 	animation: radioError .3s linear;
 	animation-play-state: paused; */
 }
 
-#radio-input,
-#radio--style {
-	height: 100%;
-	width: 100%;
-	transition: all .15s linear;
-	cursor: pointer;
-}
 
-#radio-input:checked~#radio--style {
+.radio-input:checked~.radio--style {
 	background-color: var(--clr-grey);
 	color: var(--clr-white);
 }
 
-#radio-input:hover~#radio--style {
+.radio-input:hover~.radio--style {
 	background-color: var(--clr-primary);
 	color: var(--clr-white);
 }

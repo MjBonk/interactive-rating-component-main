@@ -10,7 +10,7 @@ function submit() {
 			mainContainer.remove();
 			thankYou.classList.remove("--hidden");
 			result.innerHTML =
-				"You selected " + radio[i].value + " out of 5";
+				"You selected " + radio[i].id + " out of 5";
 		} else {
 			mainError.style.animationPlayState = "running";
 		}
