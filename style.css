@@ -6,7 +6,6 @@
 
 :root {
 	--clr-primary: hsl(25, 97%, 53%);
-
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-grey: hsl(216, 12%, 54%);
 	--clr-light-gray: hsl(217, 12%, 63%);
@@ -30,14 +29,13 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-family: 'Overpass', sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
 	background-color: var(--clr-background);
 	color: var(--clr-grey);
 }
 
-main {
+.main {
 	max-width: 23rem;
 	height: 23rem;
 	border-radius: 1rem;
@@ -46,10 +44,27 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1.5rem;
-	background-image: linear-gradient(var(--clr-blue), #181E27);
+	background-image: radial-gradient(circle at top, var(--clr-blue), #181E28);
 }
 
-.star{
+.thank-you {
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.--hidden {
+	display: none;
+}
+
+#result{
+	background-color: #2e343f;
+	color: var(--clr-primary);
+	padding: .4rem .7rem;
+	border-radius: 2rem;
+}
+
+.icon {
 	height: 2.8rem;
 	width: 2.8rem;
 	border-radius: 50%;
@@ -62,13 +77,13 @@ main {
 
 /* ----------RADIO------------ */
 
-.radio__wrapper {
+.radio-wrapper {
 	display: flex;
 	justify-content: space-between;
 }
 
 .radio-button__wrapper,
-.radio-button {
+.radio--style {
 	height: 2.8rem;
 	width: 2.8rem;
 	border-radius: 50%;
@@ -81,7 +96,7 @@ main {
 	position: relative;
 }
 
-.radio-button,
+.radio--style,
 #radio-input {
 	position: absolute;
 	background-color: #272E38;
@@ -95,12 +110,12 @@ main {
 	z-index: 10;
 }
 
-#radio-input:checked~.radio-button {
+#radio-input:checked~.radio--style {
 	background-color: var(--clr-grey);
 	color: var(--clr-white);
 }
 
-#radio-input:hover~.radio-button {
+#radio-input:hover~.radio--style {
 	background-color: var(--clr-primary);
 	color: var(--clr-white);
 }
