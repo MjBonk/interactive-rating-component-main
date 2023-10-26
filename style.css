@@ -107,6 +107,7 @@ main {
 	height: 100%;
 	width: 100%;
 	transition: all .15s linear;
+	cursor: pointer;
 }
 
 #radio-input:checked~#radio--style {
